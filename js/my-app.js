@@ -3,39 +3,31 @@ var myApp = new Framework7({
 	// Default title for modals
 	root:'#app',
 	theme: 'md',
-   	view:{
-		xhrCache:false,
-		pushState:false
+    view: {
+    	xhrCache: false,
+    	pushState: false,
+    	uniqueHistory: true,
 	},
-	dialog:{
-		title:'Framework7'
+	panel: {
+		swipe: 'left',
 	},
+	dialog: {
+    	title: 'FrameWork7 DW2',
+  	},
 	routes: [
 		{
 			path: '/acerca/',
 			url: 'acerca.html',
-			name: 'acerca'
+			name: 'acerca',
   		},
 		{
-			path: '/swipe/',
-			url: 'swipe.html',
-			name: 'swipe'
-  		}
-		
+			path: '/peliculas/',
+			url: 'mas-peliculas.html',
+			name: 'peliculas',
+		}
 	]
     // ... other parameters
 });
 
 // Export selectors engine
 var $$ = Dom7;
-
-
-
-// Add another view, which is in right panel
-
-
-
-
-
- 
-
